@@ -1,6 +1,6 @@
 # A sample Star wars project
 
-![alt text](./screenshot.jpg)
+![alt text](https://raw.githubusercontent.com/Adrianprz/sw-example/master/preview.png)
 
 ## Project setup
 ```

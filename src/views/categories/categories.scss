@@ -1,0 +1,121 @@
+@import "~Styles/modules/variables/_breakpoints.scss";
+
+.sw-categories {
+    position: relative;
+    display: block;
+    &__title {
+        color: var(--white);
+        margin: 0 0 30px 0;
+        font-size: 24px;
+        display: block;
+        text-align: center;
+    }
+    &__list {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @include tablet-landscape-and-below {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 0 0 20px 0;
+            .sw-categories {
+                z-index: 99;
+                &__item {
+                    width: 350px;
+                    &:before {
+                        opacity: 1;
+                    }
+                    &:hover {
+                        transform: scale(1) !important;
+                        transition: none;
+                    }
+                    &:last-child {
+                        margin: 0 100px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    &__link {
+        display: block;
+        text-decoration: none;
+        user-select: none;
+        padding: 80px 20px;
+        width: 100%;
+        height: 100%;
+    }
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(33% - 20px);
+        height: calc(100vh - 282px); // total height of componentes (Wizard, Header and title of page)
+        margin: 0 20px 0 0;
+        border-radius: 8px;
+        cursor: pointer;
+        position: relative;
+        box-sizing: border-box;
+        transition: 1s transform ease-in-out;
+        overflow: hidden;
+        z-index: 3;
+        box-shadow: 0px 0px 15px 0px var(--primary);
+
+        &:before,
+        &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        &:before {
+            content: "";
+            z-index: -1;
+            background: var(--primary);
+            opacity: 0.9;
+        }
+        &:after {
+            content: attr(data-title);
+            font-size: 170px;
+            color: var(--white);
+            opacity: 0.02;
+            font-weight: bold;
+        }
+        &:hover {
+            transform: scale(1.1);
+            z-index: 5;
+            &:before {
+                opacity: 1;
+            }
+        }
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &__text {
+        display: block;
+        color: var(--white);
+        font-weight: bold;
+        font-size: 30px;
+        z-index: 3;
+    }
+    &__figure {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        left: 0;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        opacity: 0.7;
+        right: -50px;
+    }
+    &__image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: none;
+        object-position: bottom left;
+    }
+}

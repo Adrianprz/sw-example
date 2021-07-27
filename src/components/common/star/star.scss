@@ -1,0 +1,93 @@
+.sw-star {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: .5;
+    &__item {
+        width: 1px;
+        height: 1px;
+        background: transparent;
+        box-shadow: 1359px 1004px var(--white), 1655px 12px var(--white), 996px 897px var(--white), 1859px 210px var(--white), 1151px 608px var(--white),
+            582px 833px var(--white), 497px 45px var(--white), 1577px 1911px var(--white), 1798px 1530px var(--white), 1572px 1397px var(--white),
+            1304px 1893px var(--white), 848px 549px var(--white), 1839px 870px var(--white), 150px 1267px var(--white), 1709px 673px var(--white),
+            1785px 1777px var(--white), 954px 45px var(--white), 345px 1602px var(--white), 982px 1238px var(--white), 550px 1409px var(--white),
+            1066px 394px var(--white), 20px 1062px var(--white), 1448px 1963px var(--white), 942px 472px var(--white), 589px 1773px var(--white),
+            1977px 1007px var(--white), 70px 730px var(--white), 1745px 212px var(--white), 464px 272px var(--white), 315px 1002px var(--white),
+            807px 781px var(--white), 590px 79px var(--white), 185px 1304px var(--white), 25px 174px var(--white), 1905px 986px var(--white), 562px 1992px var(--white),
+            657px 224px var(--white), 1318px 1979px var(--white), 1221px 850px var(--white), 1536px 633px var(--white), 816px 1200px var(--white),
+            207px 1843px var(--white), 1534px 842px var(--white), 1102px 1146px var(--white), 1568px 71px var(--white), 1686px 43px var(--white),
+            409px 1161px var(--white), 411px 98px var(--white), 944px 1863px var(--white), 33px 723px var(--white), 1455px 1014px var(--white), 958px 94px var(--white),
+            1177px 1554px var(--white), 15px 532px var(--white), 1349px 612px var(--white), 842px 1505px var(--white), 1282px 772px var(--white),
+            978px 26px var(--white), 1607px 960px var(--white), 221px 1117px var(--white), 328px 785px var(--white), 553px 678px var(--white), 1044px 818px var(--white),
+            834px 1738px var(--white), 1041px 1428px var(--white), 86px 1452px var(--white), 1673px 349px var(--white), 1835px 1001px var(--white),
+            388px 349px var(--white), 370px 9px var(--white), 418px 1931px var(--white), 13px 1964px var(--white), 157px 1344px var(--white), 1594px 804px var(--white),
+            14px 868px var(--white), 1241px 1442px var(--white), 1342px 1613px var(--white), 124px 617px var(--white), 462px 177px var(--white),
+            876px 1335px var(--white), 1406px 946px var(--white), 979px 1042px var(--white), 1902px 1px var(--white), 428px 54px var(--white),
+            1985px 1904px var(--white), 135px 576px var(--white), 1302px 637px var(--white), 630px 1011px var(--white), 115px 946px var(--white),
+            1624px 1479px var(--white), 1875px 628px var(--white), 130px 376px var(--white), 1905px 261px var(--white), 412px 635px var(--white),
+            956px 1462px var(--white), 1727px 1707px var(--white), 1028px 554px var(--white), 190px 190px var(--white), 941px 30px var(--white),
+            1117px 179px var(--white), 858px 911px var(--white), 653px 387px var(--white), 1492px 1348px var(--white), 1856px 1202px var(--white);
+       
+        animation: animStar 50s linear infinite;
+        &:after {
+            content: " ";
+            position: absolute;
+            top: 2000px;
+            width: 1px;
+            height: 1px;
+            background: transparent;
+            box-shadow: 1359px 1004px var(--white), 1655px 12px var(--white), 996px 897px var(--white), 1859px 210px var(--white), 1151px 608px var(--white),
+                582px 833px var(--white), 497px 45px var(--white), 1577px 1911px var(--white), 1798px 1530px var(--white), 1572px 1397px var(--white),
+                1304px 1893px var(--white), 848px 549px var(--white), 1839px 870px var(--white), 150px 1267px var(--white), 1709px 673px var(--white),
+                1785px 1777px var(--white), 954px 45px var(--white), 345px 1602px var(--white), 982px 1238px var(--white), 550px 1409px var(--white),
+                1066px 394px var(--white), 20px 1062px var(--white), 1448px 1963px var(--white), 942px 472px var(--white), 589px 1773px var(--white),
+                1977px 1007px var(--white), 70px 730px var(--white), 1745px 212px var(--white), 464px 272px var(--white), 315px 1002px var(--white),
+                807px 781px var(--white), 590px 79px var(--white), 185px 1304px var(--white), 25px 174px var(--white), 1905px 986px var(--white),
+                562px 1992px var(--white), 657px 224px var(--white), 1318px 1979px var(--white), 1221px 850px var(--white), 1536px 633px var(--white),
+                816px 1200px var(--white), 207px 1843px var(--white), 1534px 842px var(--white), 1102px 1146px var(--white), 1568px 71px var(--white),
+                1686px 43px var(--white), 409px 1161px var(--white), 411px 98px var(--white), 944px 1863px var(--white), 33px 723px var(--white),
+                1455px 1014px var(--white), 958px 94px var(--white), 1177px 1554px var(--white), 15px 532px var(--white), 1349px 612px var(--white),
+                842px 1505px var(--white), 1282px 772px var(--white), 978px 26px var(--white), 1607px 960px var(--white), 221px 1117px var(--white),
+                328px 785px var(--white), 553px 678px var(--white), 1044px 818px var(--white), 834px 1738px var(--white), 1041px 1428px var(--white);
+          }
+        &:nth-child(2) {
+            width: 2px;
+            height: 2px;
+            background: transparent;
+            box-shadow: 1821px 6537px var(--white), 1045px 1976px var(--white), 619px 446px var(--white), 32px 1339px var(--white), 997px 115px var(--white),
+                475px 965px var(--white), 1644px 944px var(--white), 1504px 1285px var(--white), 1129px 726px var(--white), 1822px 41px var(--white),
+                942px 1384px var(--white), 1562px 83px var(--white), 1420px 1741px var(--white), 1970px 531px var(--white), 395px 1545px var(--white),
+                2px 342px var(--white), 822px 1470px var(--white), 1020px 1967px var(--white), 586px 1102px var(--white), 357px 163px var(--white),
+                1353px 1334px var(--white), 697px 1872px var(--white), 124px 1634px var(--white), 1900px 1607px var(--white), 1469px 1246px var(--white),
+                426px 404px var(--white), 212px 1841px var(--white), 839px 829px var(--white), 1265px 1306px var(--white), 1911px 1380px var(--white),
+                303px 532px var(--white), 274px 791px var(--white), 58px 1347px var(--white), 1105px 1409px var(--white), 1896px 1109px var(--white),
+                1929px 1791px var(--white), 322px 1541px var(--white), 1754px 1298px var(--white), 1553px 210px var(--white), 113px 342px var(--white),
+                903px 77px var(--white), 1950px 1922px var(--white), 115px 180px var(--white), 663px 319px var(--white), 483px 422px var(--white),
+                1279px 636px var(--white), 1984px 913px var(--white), 229px 1210px var(--white), 1847px 1620px var(--white), 1740px 824px var(--white),
+                838px 622px var(--white), 239px 1284px var(--white), 435px 1466px var(--white), 736px 1920px var(--white), 365px 422px var(--white),
+                1796px 1289px var(--white), 862px 254px var(--white), 199px 861px var(--white), 5px 155px var(--white), 1588px 140px var(--white),
+              ;animation: animStar 100s linear infinite;
+            &:after {
+                content: " ";
+                position: absolute;
+                top: 2000px;
+                width: 2px;
+                height: 2px;
+                background: transparent;
+                box-shadow: 1821px 6537px var(--white), 1045px 1976px var(--white), 619px 446px var(--white), 32px 1339px var(--white), 997px 115px var(--white),
+                    475px 965px var(--white), 1644px 944px var(--white), 1504px 1285px var(--white), 1129px 726px var(--white), 1822px 41px var(--white),
+                    942px 1384px var(--white), 1562px 83px var(--white), 1420px 1741px var(--white), 1970px 531px var(--white), 395px 1545px var(--white),
+                    2px 342px var(--white), 822px 1470px var(--white), 1020px 1967px var(--white), 586px 1102px var(--white), 357px 163px var(--white),
+                    1353px 1334px var(--white), 697px 1872px var(--white), 124px 1634px var(--white), 1900px 1607px var(--white), 1469px 1246px var(--white),
+                    426px 404px var(--white), 212px 1841px var(--white), 839px 829px var(--white), 1265px 1306px var(--white), 1911px 1380px var(--white),
+                    303px 532px var(--white), 274px 791px var(--white), 58px 1347px var(--white), 1105px 1409px var(--white), 1896px 1109px var(--white),
+                    1929px 1791px var(--white), 322px 1541px var(--white), 1754px 1298px var(--white), 1553px 210px var(--white), 113px 342px var(--white),
+                    903px 77px var(--white), 1950px 1922px var(--white), 115px 180px var(--white), 663px 319px var(--white), 483px 422px var(--white),
+                    1279px 636px var(--white), 1984px 913px var(--white), 229px 1210px var(--white), 1847px 1620px var(--white), 1740px 824px var(--white),
+            }
+        }
+    }
+}

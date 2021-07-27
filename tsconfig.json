@@ -1,0 +1,48 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"baseUrl": "./src",
+		"module": "esnext",
+		"target": "es5",
+		"sourceMap": true,
+		"types": [
+			"node"
+		],
+		"lib": [
+			"es2017",
+			"es2015.promise",
+			"dom"
+		],
+		"removeComments": true,
+		"noImplicitAny": true,
+		"allowSyntheticDefaultImports": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"strictNullChecks": true,
+		"skipLibCheck": true,
+		"noFallthroughCasesInSwitch": true,
+		"experimentalDecorators": true,
+		"moduleResolution": "node",
+		"typeRoots": [
+			"node_modules/@types",
+			"src/**/*.d.ts"
+		],
+		"paths": {
+			"Project/*": [
+				"./*"
+			],
+			"Media/*": [
+				"../public/media/img/*"
+			],
+			"Styles/*":[
+				"./scss/"
+			]
+		}
+	},
+	"include": [
+		"src/**/*.ts"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

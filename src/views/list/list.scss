@@ -1,0 +1,64 @@
+@import "~Styles/modules/variables/_breakpoints.scss";
+
+.sw-list {
+    display: block;
+    &__title {
+        color: var(--white);
+        margin: 0 0 30px 0;
+        font-size: 24px;
+        display: block;
+        text-align: center;
+    }
+    &__list {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__link {
+        display: block;
+        text-decoration: none;
+        user-select: none;
+        padding: 0px ​20px;
+        width: 100%;
+        height: 100%;
+    }
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(33% - 20px);
+        margin: 0 20px 20px 0;
+        background: var(--primary);
+        border-radius: 8px;
+        cursor: pointer;
+        position: relative;
+        box-sizing: border-box;
+        transition: 1s transform ease-in-out;
+        overflow: hidden;
+        box-shadow: 0px 0px 15px 0px var(--primary);
+        opacity: 0.8;
+        padding: 20px;
+        @include tablet-landscape-and-below {
+            width: calc(50% - 20px);
+            display: inline-block;
+            &:hover {
+                transform: scale(1);
+            }
+        }
+        &:hover {
+            transform: scale(1.1);
+            z-index: 3;
+            opacity: 1;
+        }
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &__text {
+        display: block;
+        color: var(--white);
+        font-weight: bold;
+        font-size: 30px;
+        z-index: 3;
+    }
+}
